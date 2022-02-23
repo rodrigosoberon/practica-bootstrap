@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Práctica Bootstrap 5</title>
+  </head>
+  <body>
+    <div class="container-fluid row">
+      <h1 class="display-1">Pagina con Bootstrap 5!</h1>
+      <div class="container-fluid col-md-6 p-5 my-5 bg-primary text-light">
+        <h2>Fluid</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          sint officia aspernatur ullam ex error impedit quisquam? Aliquam non
+          totam possimus impedit maiores consectetur molestias vitae! Totam
+          alias non itaque!
+        </p>
+      </div>
+      <div class="container col-md-4 p-5 my-5 bg-secondary text-light">
+        <h2>Not Fluid</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+          soluta ab repudiandae hic excepturi quisquam dignissimos recusandae
+          autem magni placeat cum doloribus laborum consectetur, omnis
+          repellendus. Voluptate quae aspernatur optio.
+        </p>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2>Texto y colores</h2>
+      <p>Texto normal</p>
+      <p class="bg-primary text-light">Texto IMPORTANTE ❕</p>
+      <p class="bg-info text-light">Texto de INFORMACION 💬</p>
+      <p class="bg-warning text-dark">Texto de ADVERTENCIA ⚠</p>
+      <p class="bg-danger text-light">Texto de PELIGRO ⛔</p>
+      <code>Bloque de codigo</code> <br />
+      <p class="mark">Resaltado</p>
+      <p class="blockquote-footer">Referencia/cita al pie</p>
+    </div>
+
+    <div class="container my-5">
+      <h2>Tabla</h2>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Mario</td>
+            <td>Gomez</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Carlo</td>
+            <td>Mejia</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container py-5">
+      <h2>Alertas</h2>
+      <div class="alert alert-warning alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button
+        ><strong>Advertencia ⚠</strong> Esta es una alerta de ADVERTENCIA y se
+        puede cerrar con la X
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <h2>Tags / Badges</h2>
+      <h4>Tag en un titulo <span class="badge bg-primary">Etiqueta</span></h4>
+      <p>Tag en un texto <span class="badge bg-danger">Peligro</span></p>
+      <p>
+        Etiqueta redonda
+        <span class="badge rounded-pill bg-info">Etiqueta</span>
+      </p>
+      <button type="button" class="btn btn-dark">
+        Notificaciones <span class="badge bg-warning text-dark">4</span>
+      </button>
+    </div>
+    <div class="container py-5 row">
+      <div class="container col-md-6">
+        <h2>Cards</h2>
+        <div class="card card-img-bottom">
+          <img src="./assets/carpincho.jpg" alt="Carpincho" />
+          <div class="card-body">
+            <h4 class="card-title">Carpincho</h4>
+            <p class="card-text">
+              Esto es un carpincho. No hace mucho: come, duerme y te mira de
+              costado como juzgandote.
+            </p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h2>Tabs dinamicas</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#home"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          aut omnis veritatis ut, porro dolor assumenda dolores voluptatem saepe
+          quidem iusto sunt, ullam nulla! Praesentium cumque labore vel quod.
+          Numquam.
+        </div>
+        <div class="tab-pane container fade" id="menu1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+          soluta enim repellat repellendus in placeat quasi officiis, iure fuga
+          nihil eaque distinctio, vel, quos ducimus ratione nam ullam facilis a?
+        </div>
+        <div class="tab-pane container fade" id="menu2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+          pariatur perspiciatis suscipit excepturi totam et natus alias sunt
+          asperiores, debitis, recusandae fugiat veritatis accusamus corporis
+          distinctio iure eos. Consequatur, sequi.
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <h2>Navbar</h2>
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/logo.png" width="40px" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container py-5">
+      <h2>Menu Off Canvas</h2>
+
+      <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Menu Off Canvas</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat, facilis molestiae atque libero animi qui! Eos recusandae possimus voluptas ex eligendi quo est, blanditiis quis facere distinctio eaque dignissimos.</p>
+        </div>
+      </div>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#demo"
+      >
+        Ejecutar
+      </button>
+    </div>
+  </body>
+</html>
